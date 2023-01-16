@@ -1,0 +1,56 @@
+{ 
+    "plans":[
+        {   "id":1,
+            "title":"Arcade",
+            "icon":"assets/images/icon-arcade.svg",
+            "price":9
+        },
+        {   "id":2,
+            "title":"Advanced",
+            "icon":"assets/images/icon-advanced.svg",
+            "price":12
+        },
+        {   "id":3,
+            "title":"Pro",
+            "icon":"assets/images/icon-pro.svg",
+            "price":15
+        }
+    ],
+    "ons":[
+        {   "id":1,
+            "title":"Online service",
+            "desc":"Access to multiplayer games",
+            "price":1
+        
+        },
+        {   "id":2,
+            "title":"Larger storage",
+            "desc":"Extra 1TB of cloud save",
+            "price":2
+        
+        },
+        {   "id":3,
+            "title":"Customizable profile",
+            "desc":"Custom theme on your profile",
+            "price":2
+        
+        }
+    ],
+    "confirm":
+    {
+        "title":"Thank you!",
+        "icon":"assets/images/icon-thank-you.svg",
+        "message":"Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.",
+        "attribution":{
+            "company":{
+                "link":"https://www.frontendmentor.io?ref=challenge",
+                "name":"Frontend Mentor"
+            },
+            "dev":{
+                "link":"https://github.com/jeft97?tab=repositories",
+                "name":"Jeft Faria Matamba"
+            }
+        }
+
+     }
+}

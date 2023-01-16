@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/prefix.style.css">
+  <title>Frontend Mentor | Multi-step form</title>
+</head>
+<body>
+  <div class="container">
+      <!-- Sidebar start -->
+      <nav class="sidebar">
+          <ul class="navigation">
+              <li class="navigation__item">
+                  <div class="navigation__item--step">
+                     <span class="circle u-is-active js-circle">1</span>
+                     <div class="step">
+                        <span>step 1</span>
+                        <span>Your info</span>
+                     </div>
+                  </div>
+              </li>
+              <li class="navigation__item">
+                  <div  class="navigation__item--step">
+                     <span class="circle u-is-active js-circle">2</span>
+                     <div class="step">
+                        <span>step 2</span>
+                        <span>Select plan</span>
+                     </div>
+                  </div>
+               </li>
+              <li class="navigation__item">
+                  <div  class="navigation__item--step">
+                     <span class="circle u-is-active js-circle">3</span>
+                     <div class="step">
+                        <span>step 3</span>
+                        <span>Add-ons</span>
+                     </div>
+                  </div>
+               </li>
+              <li class="navigation__item">
+                  <div class="navigation__item--step">
+                     <span class="circle u-is-active js-circle">4</span>
+                     <div class="step">
+                        <span>step 4</span>
+                        <span>Summary</span>
+                     </div>
+                  </div>
+               </li>
+          </ul>
+      </nav>
+      <!-- Sidebar end -->
+
+      <main class="content js-main-content">
+           <!-- Step 1 start -->
+         <section class="section u-visually-hidden" id="step--1">
+
+            <h2 class="heading--2 u-mb-small">Personal info</h2>
+            <p class="section__subtitle u-mb-medium">Please provide your name, email address, and phone number.</p>
+            
+            <form action="#" class="form">
+               <div class="group-form">
+                  <label for="f-name">Name</label>
+                  <input type="text"id="f-name" placeholder="e.g. Stephen King" class="input js-input">
+                  <span class="error">This field is required</span>
+               </div>
+               <div class="group-form">
+                  <label for="f-email">Email Address</label>
+                  <input type="email"id="f-email" placeholder="e.g. stephenking@lorem.com" class="input js-input">
+                  <span class="error">This field is required</span>
+               </div>
+               <div class="group-form">
+                  <label for="f-phone">Phone Number</label>
+                  <input type="tel"id="f-phone" placeholder="e.g. +1 234 567 890" class="input js-input">
+                  <span class="error">This field is required</span>
+               </div>
+            </form>
+            <div class="section__controlls js-section__controlls">
+               <button class="c-btn c-btn--next-step js-next-step">Next Step</button>
+            </div>
+         </section>
+         <!-- Step 1 end -->
+
+         <!-- Step 2 start -->
+         <section class="section section-plan u-visually-hidden" id="step--2">
+            <h2 class="heading--2 u-mb-small">Select your plan</h2>
+            <p class="section__subtitle u-mb-medium">You have the option of monthly or yearly billing.</p>
+            <div class="section-plan__content u-mb-medium">
+               <!--content plans-->
+            </div>
+            <div class="section-plan__choose u-mb-big">
+               <span>Monthly</span>
+               <div class="group-input">
+                  <input type="checkbox" id="f-plan" hidden>
+                  <label for="f-plan" class="js-choose-plan"></label>
+               </div>
+               <span>Yearly</span>
+            </div>
+            <div class="section__controlls js-section__controlls">
+               <button class="c-btn c-btn--back-step js-back-step">Go Back</button>
+               <button class="c-btn c-btn--next-step js-next-step">Next Step</button>
+            </div>
+         </section>
+         <!-- Step 2 end -->
+         
+         <!-- Step 3 start -->
+         <section class="section section-ons u-visually-hidden" id="step--3">
+            <h2 class="heading--2 u-mb-small">Pick add-ons</h2>
+            <p class="section__subtitle u-mb-medium">Add-ons help enhance your gaming experience.</p>
+            <div class="section-ons__content u-mb-big">
+               <!--Ons content-->
+            </div>
+            <div class="section__controlls js-section__controlls">
+               <button class="c-btn c-btn--back-step js-back-step">Go Back</button>
+               <button class="c-btn c-btn--next-step js-next-step">Next Step</button>
+            </div>
+         </section>
+         <!-- Step 3 end -->
+         
+         <!-- Step 4 start -->
+         <section class="section section-Finishing u-visually-hidden" id="step--4">
+            <h2 class="heading--2 u-mb-small">Finishing up</h2>
+            <p class="section__subtitle u-mb-medium">Double-check everything looks OK before confirming.</p>
+            <div class="section-Finishing__content">
+               <table class="table">
+                  <!---content table-->
+               </table>
+            </div>
+            <div class="section__controlls js-section__controlls">
+               <button class="c-btn c-btn--back-step js-back-step">Go Back</button>
+               <button class="c-btn c-btn--confirm js-btn-confirm">Confirm</button>
+            </div>
+         </section>
+         <!-- Step 4 end -->
+         <section class="section section-thanks js-section-thanks u-visually-hidden" id="step--5">
+          <div class="spinner  js-spinner">
+               <div class="rect1"></div>
+               <div class="rect2"></div>
+               <div class="rect3"></div>
+               <div class="rect4"></div>
+               
+           </div>
+         </section>
+         <!-- Step 5 end -->
+      </main>
+  </div>  
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
+
