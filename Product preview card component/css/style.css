@@ -1,0 +1,160 @@
+:root {
+  --color-dark-cyan: hsl(158, 36%, 37%);
+  --color-dark-cyan-2: hsl(158, 34%, 37%);
+  --color-Cream: hsl(30, 38%, 92%);
+  --color-very-dark-blue: hsl(212, 21%, 14%);
+  --color-dark-grayish-blue: hsl(228, 12%, 48%);
+  --color-white: hsl(0, 0%, 100%);
+  --font-family-2: "Fraunces", serif; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 48%; } }
+
+img {
+  width: 100%; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  background-color: var(--color-Cream);
+  color: var(--color-dark-grayish-blue); }
+
+::selection {
+  color: var(--color-white);
+  background-color: var(--color-dark-cyan); }
+
+:focus-visible {
+  position: relative;
+  outline: 2px dotted #73bda2;
+  outline-offset: 1px;
+  z-index: 10; }
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem; }
+
+.figure {
+  max-width: 60rem;
+  display: flex;
+  box-shadow: 0 2rem 6rem 2rem rgba(0, 0, 0, 0.1);
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem; }
+  @media only screen and (max-width: 37.5em) {
+    .figure {
+      flex-direction: column;
+      border-radius: 0.8rem 0.8rem 0 0;
+      max-width: 50rem; } }
+  .figure__img {
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem; }
+    @media only screen and (max-width: 37.5em) {
+      .figure__img {
+        border-radius: 0.8rem 0.8rem 0 0; } }
+  .figure__description {
+    padding: 3rem;
+    font-size: 1.4rem;
+    flex-basis: 55%;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-top-right-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem; }
+    @media only screen and (max-width: 37.5em) {
+      .figure__description {
+        border-radius: 0 0 0.8rem 0.8rem;
+        font-size: 1.9rem;
+        gap: 2.2rem; } }
+    @supports not (gap: 1rem) {
+      .figure__description > *:not(:last-child) {
+        margin-bottom: 2rem; } }
+
+.description__type {
+  text-transform: uppercase;
+  margin-top: 1rem;
+  letter-spacing: 0.3rem;
+  font-size: 1.2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .description__type {
+      font-size: 1.5rem; } }
+
+.description__name {
+  font-family: var(--font-family-2);
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--color-very-dark-blue); }
+  @media only screen and (max-width: 37.5em) {
+    .description__name {
+      font-size: 3.5rem; } }
+
+.description__info {
+  line-height: 1.5; }
+  @media only screen and (max-width: 37.5em) {
+    .description__info {
+      line-height: 1.6; } }
+
+.description__price {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.4rem; }
+  @media only screen and (max-width: 37.5em) {
+    .description__price {
+      font-size: 1.8rem; } }
+  .description__price--now {
+    font-family: var(--font-family-2);
+    font-size: 2.4rem;
+    color: var(--color-dark-cyan); }
+
+.box-image {
+  flex-basis: 45%; }
+  @media only screen and (max-width: 37.5em) {
+    .box-image {
+      flex-basis: 30%; } }
+
+.btn {
+  border: none;
+  background-color: var(--color-dark-cyan);
+  color: var(--color-white);
+  border-radius: 0.5vmax;
+  padding: 1.2rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  outline: 2.5px dashed transparent;
+  outline-offset: 2px; }
+  @media only screen and (max-width: 37.5em) {
+    .btn {
+      font-size: 2rem;
+      padding: 1.5rem; } }
+  .btn-icon {
+    fill: currentColor;
+    margin-right: 0.5rem; }
+  .btn:hover {
+    transform: translateY(-1.5px);
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.1);
+    background-color: var(--color-dark-cyan-2); }
+  .btn:active, .btn:focus, .btn:hover {
+    border: none;
+    transform: translateY(1px);
+    outline: 2.5px dashed #73bda2;
+    outline-offset: 2px; }
