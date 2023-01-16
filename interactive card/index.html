@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+</head>
+<body>
+  <div class="wrapper">
+    <div class="interative-card">
+        <div class="interative-card__sidebar">
+            <div class="box-cards">
+              <div class="card card--front">
+                <img src="images/card-logo.svg" alt="logo card" class="logo-card">
+                <div class="card__desc">
+                  <span class="card__desc--number js-label-number" data-input="number">0000 0000 0000 0000</span>
+                  <div class="box">
+                    <span class="card__desc--name js-label-name" data-input="name"></span>
+                    <span class="card__desc--date">
+                      <span class="js-label-date-month" data-input="month">00</span>
+                      <span>/</span>
+                      <span class="js-label-data-year" data-input="year">00</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="card card--back">
+                <span class="card__desc--cvc js-label-cvc" data-input="cvc">000</span>
+              </div>
+            </div>
+        </div>
+        <main class="interative-card__main-content">
+            <form action="#" class="form js-form">
+                <div class="group-form">
+                  <label for="f-name">Cardholder Name</label>
+                  <input type="text" name="f-name" id="f-name" placeholder="e.g. Jane Appleseed">
+                </div>
+                <div class="group-form">
+                  <label for="f-number">Card Number</label>
+                  <input type="text" name="f-number" id="f-number" placeholder="e.g. 1234 5678 9123 0000">
+                  <small class="message-error">Wrong format, numbers and max,min 16 digit only</small>
+                </div>
+                <div class="container">
+                  <div class="group-form">
+                    <label for="f-month">Exp. Date (MM/YY)</label>
+                    <div class="box">
+                      <input type="number" name="f-month" id="f-month"  placeholder="MM">
+                      <input type="number" name="f-year" id="f-year"   placeholder="YY">
+                    </div>
+                    <small class="message-error">Can’t be blank</small>
+                  </div>
+                  <div class="group-form">
+                    <label for="f-cvc">CVC</label>
+                    <input type="number" name="f-cvc" id="f-cvc" placeholder="e.g. 123">
+                    <small class="message-error">Can’t be blank and min 3 digit</small>
+                  </div>
+                </div>
+                <button class="c-btn c-btn--confirm js-btn-confirm">Confirm</button>
+            </form>
+            <section class="section-complete u-visually-hidden js-section-complete">
+                <img src="images/icon-complete.svg" alt="icon complete" class="icon-checked">
+                <h2 class="heading--2">Thank You!</h2>
+                <p class="subtitle u-mb-medium">We’ve added your card details</p>
+                <button class="c-btn c-btn--complete js-btn-complete">Continue</button>
+            </section>
+        </main>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
