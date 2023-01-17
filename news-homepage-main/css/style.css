@@ -226,6 +226,7 @@ picture{
     display: inline-block;
 }
 .logo{
+    transform: scale(.8);
    object-fit: cover;
 }
 
