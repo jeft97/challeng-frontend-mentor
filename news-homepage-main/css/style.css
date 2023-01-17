@@ -184,7 +184,7 @@ picture{
     margin-bottom: .8rem;
     transition: all .2s;
     text-transform: capitalize;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
 }
 .list__item--link:hover{
     color: var(--clr-primary-orange);
