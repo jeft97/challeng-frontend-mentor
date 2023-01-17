@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | News homepage</title>
+</head>
+<body>
+
+  <div class="wrapper">
+      <div class="menu-mobile js-menu-mobile">
+        <div class="container js-container">
+          <div class="c-btn c-btn--close-menu js-btn--close-menu" role="button" tabindex="0">
+            <svg width="32" height="31" xmlns="http://www.w3.org/2000/svg" aria-labelledby="svgclose">
+              <title id="svgclose" hidden="true">Close Menu</title>
+              <g fill="#00001A" fill-rule="evenodd">
+                <path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"/>
+                <path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"/>
+              </g>
+            </svg>
+          </div>
+          <ul class="nav-mobile">
+            <li class="nav-mobile__item"><a href="#" class="nav-mobile__item--link">Home</a></li>
+              <li class="nav-mobile__item"><a href="#" class="nav-mobile__item--link">New</a></li>
+              <li class="nav-mobile__item"><a href="#" class="nav-mobile__item--link">Popular</a></li>
+              <li class="nav-mobile__item"><a href="#" class="nav-mobile__item--link">Trending</a></li>
+              <li class="nav-mobile__item"><a href="#" class="nav-mobile__item--link">Categories</a></li>
+          </ul>
+        </div>
+      </div>
+      <header class="header">
+          <div class="logo-box">
+            <h1 id="logo" hidden="true">news</h1>
+            <img src="assets/images/logo.svg"  aria-labelledby="logo">
+          </div>
+          <nav>
+            <ul class="navigation">
+              <li class="navigation__item"><a href="#" class="navigation__item--link">Home</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__item--link">New</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__item--link">Popular</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__item--link">Trending</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__item--link">Categories</a></li>
+            </ul>
+
+            <div role="button" tabindex="0" class="c-btn c-btn--open-menu js-btn--open-menu">
+              <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg" aria-labelledby="svgtitle">
+                <title class="svgtitle" hidden="true">Open menu</title>
+                <g fill="#00001A" fill-rule="evenodd">
+                  <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/>
+                </g>
+              </svg>
+
+            </div>
+
+          </nav>
+      </header>
+      <main class="content">
+        <article class="main-article">
+          <picture>
+            <source media="(max-width:29em )" srcset="assets/images/image-web-3-mobile.jpg">
+            <img src="assets/images/image-web-3-desktop.jpg" alt="The Bright Future of Web 3.0" class="main-article--thumb">
+          </picture>
+          <h2 class="main-article--title">The Bright Future of Web 3.0?</h2>
+          <p class="main-article--text">
+            We dive into the next evolution of the web that claims to put the power 
+            of the platforms back into the hands of the people.But is it really fulfilling its promise?
+          </p>
+          <a href="#" class="c-btn c-btn--read-more">Read more</a>
+        </article>
+        <aside class="treading">
+          <article class="treading__post">
+            <figure>
+              <img src="assets/images/image-retro-pcs.jpg" alt="Retro PCs">
+            </figure>
+            <div class="box">
+              <span class="treading__post--number">01</span>
+              <h3 class="heading--3">Reviving Retro PCs</h3>
+              <P class="treading__article--text">What happens when old PCs are given modern upgrades?</P>
+            </div>
+          </article>
+          <article class="treading__post">
+            <figure>
+              <img src="assets/images/image-top-laptops.jpg" alt="Top 10 Laptops">
+            </figure>
+            <div class="box">
+              <span class="treading__post--number">02</span>
+              <h3 class="heading--3">Top 10 Laptops of 2022</h3>
+              <P class="treading__article--text">Our best picks for various needs and budgets.</P>
+            </div>
+          </article>
+          <article class="treading__post">
+            <figure>
+              <img src="assets/images/image-gaming-growth.jpg" alt="The Growth of Gaming">
+            </figure>
+            <div class="box">
+              <span class="treading__post--number">03</span>
+              <h3 class="heading--3">The Growth of Gaming</h3>
+              <P class="treading__article--text">How the pandemic has sparked fresh opportunities.</P>
+            </div>
+          </article>
+        </aside>
+        <section class="section-new">
+          <h2 class="heading--2 u-mb-xs">New</h2>
+          <ul class="list">
+            <li class="list__item">
+              <a href="#" class="list__item--link">Hydrogen VS Electric Cars</a>
+              <p class="list__item--desc">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__item--link">The Downsides of AI Artistry</a>
+              <p class="list__item--desc">What are the possible adverse effects of on-demand AI image generation?</p>
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__item--link">Is VC Funding Drying Up?</a>
+              <p class="list__item--desc">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </li>
+          </ul>
+        </section>
+      </main>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
